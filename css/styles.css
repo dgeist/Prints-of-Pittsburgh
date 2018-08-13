@@ -1,0 +1,225 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: none;
+}
+#header{
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  top: 0;
+}
+.header-img{
+  margin: 35px;
+  float: left;
+}
+.navigation{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #888888;
+  float: right;
+  padding: 20px;
+  text-decoration: none;
+}
+.navigation a{
+  padding: 20px;
+}
+
+#wrapper{
+  width: 100%;
+  margin: 0px auto;
+}
+.hero-image{
+  width: 100%;
+  background-image: url("../images/cover_photo.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  float: left;
+
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 80%
+}
+.hero-text p{
+  margin-top: -20px;
+}
+#mainlogo{
+  max-width: 65%;
+}
+
+
+#who{
+  width: 100%;
+  max-height: 244px;
+  float: left;
+  background-color: #F2E8CC;
+  padding: 50px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+#about{
+  width: 100%;
+  padding:70px 0;
+  text-align: center;
+  float: left;
+  margin: 2em;
+  }
+
+h4{
+margin:20px;
+font-family: shackleton-wide, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 3em;
+color: #07444A;
+line-height: .5em;
+}
+h3{
+  margin:0;
+  font-family: shackleton-wide, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5em;
+  color: #07444A;
+  line-height: 1em;
+  margin: 40px;
+
+}
+h5{
+  font-family: shackleton-wide, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  color: white;
+  line-height: 1em;
+  padding: 0px;
+  margin: 40px;
+
+}
+h6{
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  color: white;
+  line-height: 1em;
+  padding: 0px;
+  margin: 20px;
+
+}
+
+#services{
+  text-align: center;
+  background-color: #07444A;
+  float: left;
+  width: 100%;
+  color: #FFFFFF;
+
+}
+
+#screenprint{
+  float: left;
+  padding: 30px;
+  width: 33%;
+}
+#design{
+  float: left;
+  padding: 30px;
+  width: 33%;
+
+
+}
+#garment-sales{
+  float: left;
+  padding: 30px;
+  width: 33%;
+  background-color: #000000;
+
+}
+#pricing{
+  float: left;
+  text-align: center;
+  width: 100%;
+
+}
+#work{
+  float: left;
+  text-align: center;
+  width: 100%;
+
+}
+#contact{
+  width: 100%;
+  background-image: url("../images/skyline-contact.png");
+  height: 830px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  float: left;
+  text-align: center;
+  color: white;
+}
+#contact p{
+  font-weight: 400;
+}
+
+#info{
+  float: left;
+  text-align: left;
+  padding: 50px;
+}
+#contact-form{
+  float: left;
+  text-align: left;
+  padding: 50px;
+  width: 30%;
+}
+.contact-info-images{
+  float: left;
+}
+label{
+  font-family: 'Open Sans', sans-serif;
+}
+input{
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  box-shadow: none;
+  border-color: white;
+  border-style: solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#message{
+  height: 20em;
+}
+#testimonials{
+  float: left;
+  text-align: center;
+  width: 100%;
+
+}
+#footer{
+  float: left;
+  width: 100%;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+
+}
