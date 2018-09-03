@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: none;
+    font-size: 12pt;
 }
 
 .header-container {
@@ -205,6 +206,12 @@ h6 {
     width: 100%;
 }
 
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 #contact {
     width: 100%;
     background-image: url("../images/skyline-contact.png");
@@ -223,21 +230,34 @@ h6 {
     }
 
 #info {
-    float: left;
-    text-align: left;
-    padding: 50px;
+    margin: 1em;
 }
+    #info p{
+        margin: 0;
+    }
+    #info .contact-item{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        justify-content: flex-start;
+    }
 
 #contact-form {
-    float: left;
-    text-align: left;
-    padding: 50px;
-    width: 30%;
+    margin: 1em;
+    flex-basis: 50%;
 }
 
-.contact-info-images {
-    float: left;
+    #contact-form label{
+        float: left;
+    }
+
+.contact-info-images-container {
+    width: 2em;
+    margin-right: 1em;
 }
+    .contact-info-images {
+        height: 1.5em;
+
+    }
 
 label {
     font-family: 'Open Sans', sans-serif;

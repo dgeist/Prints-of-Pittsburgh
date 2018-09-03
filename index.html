@@ -90,30 +90,62 @@
         <div id="contact">
             <h5>HOW CAN WE HELP YOU?</h5>
             <p>Give us a brief description of your project: how many items you plan to print; preferable t-shirt color(s); how many colors in your design.</p>
-            <div id="info">
-                <p>Contact Info</p>
-                <img src="images/mail-icon.png" class="contact-info-images"><p>jediprinters@printsofpittsburgh.com</p>
-                <img src="images/phone-icon.png" class="contact-info-images"><p>440.969.4844</p>
-                <img src="images/globe-icon.png" class="contact-info-images"><p>www.PrintsofPittsburgh.com</p>
-                <img src="images/facebook-icon.png" class="contact-info-images"><p>www.facebook.com/printsofpittsburgh</p>
-                <img src="images/map-icon.png" class="contact-info-images"><p>Pittsburgh, PA</p>
-            </div>
-            <div id="contact-form">
-                <form>
-                    <label for="name">Your Name (required)</label>
-                    <input type="text" id="name" placeholder="Name..">
+            <div class="flex-container">
+                <div id="info">
+                    <p>Contact Info</p>
+                    <div class="flex-container contact-item">
+                        <div class="contact-info-images-container">
+                            <img src="images/mail-icon.png" class="contact-info-images">
+                        </div>
+                        <p>jediprinters@printsofpittsburgh.com</p>
+                    </div>
+                    <div class="flex-container contact-item">
+                        <div class="contact-info-images-container">
+                            <img src="images/phone-icon.png" class="contact-info-images">
+                        </div>
+                        <p>440.969.4844</p>
+                    </div>
+                    <div class="flex-container contact-item">
+                        <div class="contact-info-images-container">
+                            <img src="images/globe-icon.png" class="contact-info-images">
+                        </div>
+                        <p>www.PrintsofPittsburgh.com</p>
+                    </div>
+                    <div class="flex-container contact-item">
+                        <div class="contact-info-images-container">
+                            <img src="images/facebook-icon.png" class="contact-info-images">
+                        </div>
+                        <p>www.facebook.com/printsofpittsburgh</p>
+                    </div>
+                    <div class="flex-container contact-item">
+                        <div class="contact-info-images-container">
+                            <img src="images/map-icon.png" class="contact-info-images">
+                        </div>
+                        <p>Pittsburgh, PA</p>
+                    </div>
+                </div>
+                <div id="contact-form">
+                    <form>
+                        <label for="name">Your Name (required)</label>
+                        <br/>
+                        <input type="text" id="name" placeholder="Name..">
+                        <br/>
+                        <label for="email">Your Email (required)</label>
+                        <br />
+                        <input type="email" id="email" placeholder="Email..">
+                        <br />
+                        <label for="subject">Subject</label>
+                        <br />
+                        <input type="text" id="subject" placeholder="Subject..">
+                        <br />
+                        <label for="message">Your Message</label>
+                        <br />
+                        <input type="text" id="message" placeholder="Your Message..">
+                        <br />
+                        <button>File Upload</button> <button>Send</button>
 
-                    <label for="email">Your Email (required)</label>
-                    <input type="email" id="email" placeholder="Email..">
-
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Subject..">
-
-                    <label for="message">Your Message</label>
-                    <input type="text" id="message" placeholder="Your Message..">
-                    <button>File Upload</button> <button>Send</button>
-
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
 
