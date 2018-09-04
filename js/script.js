@@ -3,7 +3,7 @@
         responsiveNav();
     });
     responsiveNav();
-    testimonials();
+    testimonialCarousel();
 });
 
 function toggleNav() {
@@ -22,14 +22,10 @@ function responsiveNav() {
     }
 }
 
-function testimonials() {
-    $('.testimonial-button:not(.selected)').click(function () {
-        $('.testimonial-button').removeClass('selected');
-        $(this).addClass('selected');
-
-        let index = $(this).attr('id').replace('button', '');
-
-        $('.testimonial-container').removeClass('selected');
-        $('#testimonial' + index).addClass('selected');
+function testimonialCarousel() {
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        dots: true,
+        nav: true
     });
 }

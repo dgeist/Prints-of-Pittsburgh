@@ -297,31 +297,30 @@ input, textarea {
     .testimonial-container {
         font-family: 'Open Sans', sans-serif;
         margin-top: 2em;
-        margin-bottom: 2em;
-        display: none;
+        margin-bottom: 1em;
     }
-        .testimonial-container.selected{
-            display: block;
-        }
-        .testimonial-name{
+
+        .testimonial-name {
             margin-top: 1em;
+            color: #C76E29;
+            font-weight: bold;
         }
 
-    .testimonial-button{
+    .owl-dot{
         width: 2em;
         height: .25em;
-        border: 1px solid #888888;
-        display: inline-block;
+        margin: 0 .25em;
+        border: 1px solid #888888 !important;
     }
-
-        .testimonial-button.selected{
-            background-color: #888888;
+        .owl-dot.active {
+            background-color: #888888 !important;
+        }
+        .owl-dot.active:hover{
+            cursor: unset;
         }
 
-        .testimonial-button:not(.selected):hover{
-            cursor: pointer;
+    
 
-        }
     
 #footer {
     float: left;
