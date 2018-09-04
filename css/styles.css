@@ -250,6 +250,9 @@ h6 {
     #contact-form label{
         float: left;
     }
+    #contact-form input, #contact-form textarea{
+        color: white;
+    }
 
 .contact-info-images-container {
     width: 2em;
@@ -264,15 +267,16 @@ label {
     font-family: 'Open Sans', sans-serif;
 }
 
-input {
+input, textarea {
     width: 100%;
     padding: 10px;
-    background: transparent;
+    background-color: rgba(0, 0, 0, .5);
     box-shadow: none;
     border-color: white;
     border-style: solid;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #message {
