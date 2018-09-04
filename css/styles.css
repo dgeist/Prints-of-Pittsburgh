@@ -289,6 +289,40 @@ input, textarea {
     width: 100%;
 }
 
+    .testimonial-master-container, .testimonial-buttons{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .testimonial-container {
+        font-family: 'Open Sans', sans-serif;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: none;
+    }
+        .testimonial-container.selected{
+            display: block;
+        }
+        .testimonial-name{
+            margin-top: 1em;
+        }
+
+    .testimonial-button{
+        width: 2em;
+        height: .25em;
+        border: 1px solid #888888;
+        display: inline-block;
+    }
+
+        .testimonial-button.selected{
+            background-color: #888888;
+        }
+
+        .testimonial-button:not(.selected):hover{
+            cursor: pointer;
+
+        }
+    
 #footer {
     float: left;
     width: 100%;
