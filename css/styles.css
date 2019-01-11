@@ -174,7 +174,31 @@ h6 {
     color: #FFFFFF;
 }
 
-#screenprint {
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+    .services-container .service {
+        max-width: 400px;
+        padding: 10px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        color: white;
+        text-decoration: none;
+    }
+
+        .services-container .service:hover {
+            background-color: #084e4b;
+        }
+
+/*#screenprint {
     float: left;
     padding: 30px;
     width: 33%;
@@ -191,7 +215,7 @@ h6 {
     padding: 30px;
     width: 33%;
     background-color: #000000;
-}
+}*/
 
 #pricing {
     float: left;
