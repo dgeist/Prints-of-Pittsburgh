@@ -322,7 +322,7 @@ input, textarea {
             cursor: pointer;
 
         }
-    
+
 #footer {
     float: left;
     width: 100%;
@@ -401,3 +401,44 @@ p {
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
     }
+.catalog-container{
+width: 70%;
+padding-top: 250px;
+margin: 0 auto;
+
+
+}
+.catalog{
+float: left;
+text-align: center;
+margin:.5em;
+font-family: 'Open Sans', sans-serif;
+text-decoration: none;
+
+}
+#ACC{
+  width: 232px;
+
+}
+#one-stop{
+  width: 233px;
+}
+#onno{
+  width:300px;
+}
+#royal-apparel{
+  width:251px;
+
+}
+#s-s{
+  width:235px;
+}
+
+#catalog{
+  float: left;
+  height: 300px;
+  border: none;
+  margin-left: 0 auto;
+  padding: .5em;
+
+}
