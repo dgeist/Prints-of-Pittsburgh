@@ -11,45 +11,11 @@
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript" src="js/imagelightbox.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init("user_mYmKzfqMeqhgr4QgYbkpS");
         })();
     </script>
-    <script type="text/javascript" src="js/imagelightbox.js"></script>
-
-    <script>
-        $(function () {
-            $('a').imageLightbox();
-        });
-        $(selector).imageLightbox(
-            {
-                selector: 'id="imagelightbox"',   // string;
-                allowedTypes: 'png|jpg|jpeg|gif',     // string;
-                animationSpeed: 250,                    // integer;
-                preloadNext: true,                   // bool;            silently preload the next image
-                enableKeyboard: true,                   // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
-                quitOnEnd: false,                  // bool;            quit after viewing the last image
-                quitOnImgClick: false,                  // bool;            quit when the viewed image is clicked
-                quitOnDocClick: true,                   // bool;            quit when anything but the viewed image is clicked
-                onStart: false,                  // function/bool;   calls function when the lightbox starts
-                onEnd: false,                  // function/bool;   calls function when the lightbox quits
-                onLoadStart: false,                  // function/bool;   calls function when the image load begins
-                onLoadEnd: false                   // function/bool;   calls function when the image finishes loading
-            });
-        var $instance = $(selector).imageLightbox();
-
-        $instance.switchImageLightbox(index);
-        // switches to the other image; accepts integer argument (an index of the desired image)
-
-        $instance.quitImageLightbox();
-        // quits the lightbox
-
-        $instance.addToImageLightbox($('a.is-new'));
-        // quits the lightbox
-    </script>
-
     <title>Prints of Pittsburgh</title>
 </head>
 <body>
@@ -128,37 +94,16 @@
         <div id="work">
             <h4 id="green-header">OUR WORK</h4>
 
-            <a href="">
               <img class="gallery" id="imagelightbox" src="images/our_work/thumbs/abc-lanes.png">
-            </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/als-bike-drive.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/bickford.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/cuyahoga-cc.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/cuyahoga2.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/dormont-elementary.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/oaks-wrestling.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/phantom-fireworks.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/studio-stage.png">
-              </a>
-            <a href="">
               <img class="gallery" src="images/our_work/thumbs/zoes-beer.png">
-              </a>
-
 
         </div>
 
