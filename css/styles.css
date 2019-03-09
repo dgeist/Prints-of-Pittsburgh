@@ -49,6 +49,7 @@ body, html {
         text-align: center;
         padding-left: 10px;
         padding-right: 10px;
+        cursor: pointer;
     }
 
         .topnav a:hover {
@@ -223,6 +224,7 @@ h6 {
 }
 #footer a{
   text-decoration: none;
+  cursor: pointer;
 }
 .services-container {
     display: flex;
