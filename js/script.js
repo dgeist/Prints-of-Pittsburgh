@@ -58,7 +58,6 @@ function scrollToElement($scrollElem) {
     let scrollPos = $scrollElem.offset().top;
     let navHeight = $('.header-container').height();
     scrollPos = scrollPos - navHeight;
-    console.log(scrollPos);
     $('html, body').animate({
         scrollTop: scrollPos
     }, 500);
