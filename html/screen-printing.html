@@ -13,7 +13,7 @@
 </head>
 <body>
   <div  class="header-container">
-      <img class="header-img" src="../images/pop-header-image.png">
+      <a href="../index.html"><img class="header-img" src="../images/pop-header-image.png"></a>
 
       <div class="topnav" id="header">
           <a href="../javascript:void(0);" class="icon" onclick="toggleNav()">
@@ -22,17 +22,18 @@
               </div>
           </a>
           <div class="nav-links">
-              <a href="../index.html">Hello</a>
-              <a>About</a>
-              <a>Services</a>
-              <a>Work</a>
-              <a>Contact</a>
+            <a href="../index.html">Hello</a>
+            <a href="../index.html?scroll=about">About</a>
+            <a href="../index.html?scroll=services">Services</a>
+            <a href="../index.html?scroll=work">Work</a>
+            <a href="../index.html?scroll=contact">Contact</a>>
           </div>
       </div>
   </div>
 <div id="sub-page-wrapper">
 <div id="printing-top">
   <img src="../images/print-press.jpg" id="press-img">
+  <div id="screenprint-text">
   <h3 id="main-heading">SCREEN PRINTING<h3>
     <h4 id="sub-heading">WHAT IS SCREEN PRINTING?</h4>
 <p id="sub-text">Screen printing is a really cool process where ink is pushed through a screen that
@@ -42,7 +43,10 @@ All of the screens required for a certain job are aligned (registered) on a pres
 leaving your awesome design as a print on a garment, poster, etc.</p>
 </div>
 
-<div id="ink-list>"<h4 id="sub-heading">INK TYPES</h4>
+</div>
+
+<div id="ink-list">
+  <h4 id="sub-heading">INK TYPES</h4>
 <p id="sub-text">Our goal is to capture your vision. Choosing what ink types to use can completely change the look and feel of a garment.
  To help you along in the process, we offered a some information on each ink type that we can provide.</p>
 	<ul class="ink-type-list"><li><b>STANDARD PLASTISOL</b><br />
@@ -86,6 +90,56 @@ leaving your awesome design as a print on a garment, poster, etc.</p>
 
 
 </div>
+<div id="footer">
+  <div id="footer-container">
+
+
+    <a href="index.html">Home</a></br>
+    <a class="nav-scroll-on-click" scroll-target="#about">About</a></br>
+    <a class="nav-scroll-on-click" scroll-target="#service">Services</a></br>
+      <a class="subpage" href="html/screen-printing.html">Screen Printing</a>
+      <a class="subpage" href="html/design.html">Design</a>
+      <a class="subpage" href="html/garment-sales.html">Garment Sales</a></br>
+    <a class="nav-scroll-on-click" scroll-target="#about">Work</a></br>
+    <a class="nav-scroll-on-click" scroll-target="#about">Contact</a>
+
+    <div id="info-footer">
+    <div class="flex-container contact-item">
+        <div class="contact-info-images-container">
+            <img src="../images/mail-icon.png" class="contact-info-images">
+        </div>
+        <p>jediprinters@printsofpittsburgh.com</p>
+    </div>
+    <div class="flex-container contact-item">
+        <div class="contact-info-images-container">
+            <img src="../images/phone-icon.png" class="contact-info-images">
+        </div>
+        <p>440.969.4844</p>
+    </div>
+    <div class="flex-container contact-item">
+        <div class="contact-info-images-container">
+            <img src="../images/globe-icon.png" class="contact-info-images">
+        </div>
+        <p>www.PrintsofPittsburgh.com</p>
+    </div>
+    <div class="flex-container contact-item">
+        <div class="contact-info-images-container">
+            <img src="../images/facebook-icon.png" class="contact-info-images">
+        </div>
+        <p>www.facebook.com/printsofpittsburgh</p>
+    </div>
+    <div class="flex-container contact-item">
+        <div class="contact-info-images-container">
+            <img src="../images/map-icon.png" class="contact-info-images">
+        </div>
+        <p>Pittsburgh, PA</p>
+    </div>
+  </div>
+
+    <p id="copyright">Copyright 2018 - Prints of Pittsburgh. All Rights Reserved.</p>
+</div>
+</div>
+
 
 </body>
 

@@ -6,6 +6,15 @@ body, html {
     font-size: 12pt;
 }
 
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
 .header-container {
     width: 100%;
     background-color: #ffffff;
@@ -215,12 +224,22 @@ h6 {
   font-weight: normal;
 }
 
+#ink-list{
+  float: left;
+}
+#screenprint-text{
+  padding-top: 130px;
+}
+#footer a{
+  text-decoration: none;
+}
 .services-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 10px 0;
 }
+
 
     .services-container .service {
         max-width: 400px;
@@ -238,6 +257,17 @@ h6 {
         .services-container .service:hover {
             background-color: #084e4b;
         }
+  #sub-page-wrapper a{
+    font-family: 'Open Sans', sans-sans-serif;
+    color: #666666;
+    text-decoration: none;
+  }
+  #sub-page-wrapper a:hover{
+    font-family: 'Open Sans', sans-sans-serif;
+    color: #888888;
+    text-decoration: none;
+  }
+
 
 /*#screenprint {
     float: left;
@@ -262,6 +292,7 @@ h6 {
     float: left;
     text-align: center;
     width: 100%;
+    display: none;
 }
 
 #work {
@@ -305,6 +336,8 @@ h6 {
         margin-bottom: 1em;
         justify-content: flex-start;
     }
+
+
 
 #contact-form {
     margin: 1em;
@@ -395,10 +428,34 @@ input, textarea {
     float: left;
     width: 100%;
 }
+#footer-container{
+  width: 90%;
+  margin: 0 auto;
+}
+#footer a{
+  margin: 10px;
+}
+#info-footer {
+    margin: 1em;
+    float: right;
+}
+    #info-footer p{
+        margin: 0;
+        text-align: left;
+    }
+    #info-footer .contact-item{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        justify-content: flex-start;
+
+    }
+    .subpage{
+
+    }
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-weight: normal;
 }
 
 /*Nav Icon animation*/

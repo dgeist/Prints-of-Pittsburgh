@@ -13,7 +13,7 @@
 </head>
 <body>
   <div  class="header-container">
-      <img class="header-img" src="../images/pop-header-image.png">
+      <a href="../index.html"><img class="header-img" src="../images/pop-header-image.png"></a>
 
       <div class="topnav" id="header">
           <a href="../javascript:void(0);" class="icon" onclick="toggleNav()">
@@ -22,18 +22,20 @@
               </div>
           </a>
           <div class="nav-links">
-              <a href="../index.html">Hello</a>
-              <a>About</a>
-              <a>Services</a>
-              <a>Work</a>
-              <a>Contact</a>
+            <a href="../index.html">Hello</a>
+            <a href="../index.html?scroll=about">About</a>
+            <a href="../index.html?scroll=services">Services</a>
+            <a href="../index.html?scroll=work">Work</a>
+            <a href="../index.html?scroll=contact">Contact</a>
           </div>
       </div>
 
 
   </div>
 
-  <div class="catalog-container">
+  <div id="sub-page-wrapper">
+    <h4 id="sub-heading">PRODUCTS WE OFFER<h4>
+      <p id="sub-text">Take a look through our catalogs to see what we offer that will be the perfect fit for you!</p>
   <div class="catalog" id="ACC">
     <a href="https://www.orderacc.com/models/ecatalogs/2018_Catalog_ACC/HTML/files/assets/basic-html/index.html#1" target="_blank"><img src="../images/2018_ACC_Catalog.png" id="catalog">ACC</a>
   </div>
@@ -52,6 +54,56 @@
 
 
   </div>
+  <div id="footer">
+    <div id="footer-container">
+
+
+      <a href="index.html">Home</a></br>
+      <a class="nav-scroll-on-click" scroll-target="#about">About</a></br>
+      <a class="nav-scroll-on-click" scroll-target="#service">Services</a></br>
+        <a class="subpage" href="html/screen-printing.html">Screen Printing</a>
+        <a class="subpage" href="html/design.html">Design</a>
+        <a class="subpage" href="html/garment-sales.html">Garment Sales</a></br>
+      <a class="nav-scroll-on-click" scroll-target="#about">Work</a></br>
+      <a class="nav-scroll-on-click" scroll-target="#about">Contact</a>
+
+      <div id="info-footer">
+      <div class="flex-container contact-item">
+          <div class="contact-info-images-container">
+              <img src="../images/mail-icon.png" class="contact-info-images">
+          </div>
+          <p>jediprinters@printsofpittsburgh.com</p>
+      </div>
+      <div class="flex-container contact-item">
+          <div class="contact-info-images-container">
+              <img src="../images/phone-icon.png" class="contact-info-images">
+          </div>
+          <p>440.969.4844</p>
+      </div>
+      <div class="flex-container contact-item">
+          <div class="contact-info-images-container">
+              <img src="../images/globe-icon.png" class="contact-info-images">
+          </div>
+          <p>www.PrintsofPittsburgh.com</p>
+      </div>
+      <div class="flex-container contact-item">
+          <div class="contact-info-images-container">
+              <img src="../images/facebook-icon.png" class="contact-info-images">
+          </div>
+          <p>www.facebook.com/printsofpittsburgh</p>
+      </div>
+      <div class="flex-container contact-item">
+          <div class="contact-info-images-container">
+              <img src="../images/map-icon.png" class="contact-info-images">
+          </div>
+          <p>Pittsburgh, PA</p>
+      </div>
+    </div>
+
+      <p id="copyright">Copyright 2018 - Prints of Pittsburgh. All Rights Reserved.</p>
+  </div>
+</div>
+
 
 
 

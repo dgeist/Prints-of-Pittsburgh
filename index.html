@@ -10,13 +10,49 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/imagelightbox.js"></script>
+
+    <script src="jquery.js"></script>
+<script src="imagelightbox.js"></script>
+<script>
+    $( function()
+    {
+        $( 'a' ).imageLightbox();
+    });
+    $( selector ).imageLightbox(
+{
+    selector:       'id="imagelightbox"',   // string;
+    allowedTypes:   'png|jpg|jpeg|gif',     // string;
+    animationSpeed: 250,                    // integer;
+    preloadNext:    true,                   // bool;            silently preload the next image
+    enableKeyboard: true,                   // bool;            enable keyboard shortcuts (arrows Left/Right and Esc)
+    quitOnEnd:      false,                  // bool;            quit after viewing the last image
+    quitOnImgClick: false,                  // bool;            quit when the viewed image is clicked
+    quitOnDocClick: true,                   // bool;            quit when anything but the viewed image is clicked
+    onStart:        false,                  // function/bool;   calls function when the lightbox starts
+    onEnd:          false,                  // function/bool;   calls function when the lightbox quits
+    onLoadStart:    false,                  // function/bool;   calls function when the image load begins
+    onLoadEnd:      false                   // function/bool;   calls function when the image finishes loading
+});
+var $instance = $( selector ).imageLightbox();
+
+$instance.switchImageLightbox( index );
+// switches to the other image; accepts integer argument (an index of the desired image)
+
+$instance.quitImageLightbox();
+// quits the lightbox
+
+$instance.addToImageLightbox( $( 'a.is-new' ) );
+// quits the lightbox
+</script>
+
     <title>Prints of Pittsburgh</title>
 
 
 </head>
 <body>
     <div  class="header-container">
-        <img class="header-img" src="images/pop-header-image.png">
+        <a href="index.html"><img class="header-img" src="images/pop-header-image.png"></a>
 
         <div class="topnav" id="header">
             <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
@@ -91,7 +127,7 @@
             <h4 id="green-header">OUR WORK</h4>
 
             <a href="">
-              <img class="gallery" src="images/our_work/thumbs/abc-lanes.png">
+              <img class="gallery" id="imagelightbox" src="images/our_work/thumbs/abc-lanes.png">
             </a>
             <a href="">
               <img class="gallery" src="images/our_work/thumbs/als-bike-drive.png">
@@ -226,18 +262,54 @@
         </div>
 
         <div id="footer">
-            Home
-            About
-            Services
-              Screen Printing
-              Design
-              Garment Sales
-            Work
-            Contact
+          <div id="footer-container">
 
-            Copyright 2018 - Prints of Pittsburgh. All Rights Reserved.
+
+            <a href="index.html">Home</a></br>
+            <a class="nav-scroll-on-click" scroll-target="#about">About</a></br>
+            <a class="nav-scroll-on-click" scroll-target="#service">Services</a></br>
+              <a class="subpage" href="html/screen-printing.html">Screen Printing</a>
+              <a class="subpage" href="html/design.html">Design</a>
+              <a class="subpage" href="html/garment-sales.html">Garment Sales</a></br>
+            <a class="nav-scroll-on-click" scroll-target="#about">Work</a></br>
+            <a class="nav-scroll-on-click" scroll-target="#about">Contact</a>
+
+            <div id="info-footer">
+            <div class="flex-container contact-item">
+                <div class="contact-info-images-container">
+                    <img src="images/mail-icon.png" class="contact-info-images">
+                </div>
+                <p>jediprinters@printsofpittsburgh.com</p>
+            </div>
+            <div class="flex-container contact-item">
+                <div class="contact-info-images-container">
+                    <img src="images/phone-icon.png" class="contact-info-images">
+                </div>
+                <p>440.969.4844</p>
+            </div>
+            <div class="flex-container contact-item">
+                <div class="contact-info-images-container">
+                    <img src="images/globe-icon.png" class="contact-info-images">
+                </div>
+                <p>www.PrintsofPittsburgh.com</p>
+            </div>
+            <div class="flex-container contact-item">
+                <div class="contact-info-images-container">
+                    <img src="images/facebook-icon.png" class="contact-info-images">
+                </div>
+                <p>www.facebook.com/printsofpittsburgh</p>
+            </div>
+            <div class="flex-container contact-item">
+                <div class="contact-info-images-container">
+                    <img src="images/map-icon.png" class="contact-info-images">
+                </div>
+                <p>Pittsburgh, PA</p>
+            </div>
+          </div>
+
+            <p id="copyright">Copyright 2018 - Prints of Pittsburgh. All Rights Reserved.</p>
         </div>
-
+      </div>
     </div>
 
 </body>
