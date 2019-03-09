@@ -6,15 +6,6 @@ body, html {
     font-size: 12pt;
 }
 
-#imagelightbox
-{
-    position: fixed;
-    z-index: 9999;
-
-    -ms-touch-action: none;
-    touch-action: none;
-}
-
 .header-container {
     width: 100%;
     background-color: #ffffff;
@@ -421,13 +412,6 @@ input, textarea {
         }
 
 
-
-<<<<<<< HEAD
-        }
-
-=======
-
->>>>>>> 52da6640dc8bcab83ebb39e23c1a17ec28650621
 #footer {
     float: left;
     width: 100%;

@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     <script src="jquery.js"></script>
@@ -47,9 +50,15 @@ $instance.addToImageLightbox( $( 'a.is-new' ) );
 // quits the lightbox
 </script>
 
+=======
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_mYmKzfqMeqhgr4QgYbkpS");
+        })();
+    </script>
+>>>>>>> f7fb1c1ff92a8e2aa767c86e01847d393761644b
     <title>Prints of Pittsburgh</title>
-
-
 </head>
 <body>
     <div  class="header-container">
@@ -127,38 +136,36 @@ $instance.addToImageLightbox( $( 'a.is-new' ) );
         <div id="work">
             <h4 id="green-header">OUR WORK</h4>
 
-            <a href="">
-              <img class="gallery" id="imagelightbox" src="images/our_work/thumbs/abc-lanes.png">
+            <a href="Images/Our_work//Thumbs//abc-lanes.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" id="imagelightbox" src="images/our_work/thumbs/abc-lanes.png">
             </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/als-bike-drive.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/bickford.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/cuyahoga-cc.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/cuyahoga2.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/dormont-elementary.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/oaks-wrestling.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/phantom-fireworks.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/studio-stage.png">
-              </a>
-            <a href="">
-              <img class="gallery" src="images/our_work/thumbs/zoes-beer.png">
-              </a>
-
-
+            <a href="Images/Our_work//Thumbs//als-bike-drive.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/als-bike-drive.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//bickford.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/bickford.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//cuyahoga-cc.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/cuyahoga-cc.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//cuyahoga2.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/cuyahoga2.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//dormont-elementary.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/dormont-elementary.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//oaks-wrestling.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/oaks-wrestling.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//phantom-fireworks.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/phantom-fireworks.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//studio-stage.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/studio-stage.png">
+            </a>
+            <a href="Images/Our_work//Thumbs//zoes-beer.png" data-lightbox="image-1" data-title="My-caption">
+                <img class="gallery" src="images/our_work/thumbs/zoes-beer.png">
+            </a>
         </div>
 
         <div id="contact">
@@ -199,26 +206,31 @@ $instance.addToImageLightbox( $( 'a.is-new' ) );
                     </div>
                 </div>
                 <div id="contact-form">
-                    <form>
+                    <!--<form enctype="multipart/form-data" onsubmit="formSubmit()">-->
                         <label for="name">Your Name (required)</label>
                         <br/>
-                        <input type="text" id="name" placeholder="Name..">
+                        <input type="text" id="contactName" placeholder="Name..">
                         <br/>
-                        <label for="email">Your Email (required)</label>
+                        <label for="mail">Your Email (required)</label>
                         <br />
-                        <input type="email" id="email" placeholder="Email..">
+                        <input type="email" id="contactEmail" placeholder="Email..">
                         <br />
                         <label for="subject">Subject</label>
                         <br />
-                        <input type="text" id="subject" placeholder="Subject..">
+                        <input type="text" id="contactSubject" placeholder="Subject..">
                         <br />
                         <label for="message">Your Message</label>
                         <br />
-                        <textarea id="message" placeholder="Your Message.."></textarea>
+                        <textarea id="contactMessage" placeholder="Your Message.."></textarea>
                         <br />
+<<<<<<< HEAD
                       <!--  <button>File Upload</button>--> <button id="contact-button">Send</button>
+=======
+                        <!--<input type="file" id="fileUpload" />-->
+                        <input type="submit" value="Submit" onclick="sendContactEmail()" />
+>>>>>>> f7fb1c1ff92a8e2aa767c86e01847d393761644b
 
-                    </form>
+                    <!--</form>-->
                 </div>
             </div>
         </div>
