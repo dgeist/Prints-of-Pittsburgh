@@ -4,6 +4,7 @@
     });
     responsiveNav();
     testimonialCarousel();
+    bindNavClickEvents();
 });
 
 function toggleNav() {
@@ -27,5 +28,19 @@ function testimonialCarousel() {
         items: 1,
         dots: true,
         nav: true
+    });
+}
+
+function bindNavClickEvents() {
+    $('.nav-scroll-on-click').click(function () {
+        let id = $(this).attr('scroll-target');
+        var scrollElem = $(id);
+        var scrollPos = scrollElem.offset().top;
+        var navHeight = $('.header-container').height();
+        scrollPos = scrollPos - navHeight;
+        console.log(scrollPos);
+        $('html, body').animate({
+            scrollTop: scrollPos
+        }, 500);
     });
 }
