@@ -558,6 +558,9 @@ text-decoration: none;
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
+#footer a{
+    color: white !important;
+}
 #footer_navigation{
   margin-top: 50px;
 }
