@@ -359,6 +359,10 @@ h6 {
         height: 1.5em;
 
     }
+    #contact-button{
+      background-color: #FFFFFF
+      
+    }
 
 label {
     font-family: 'Open Sans', sans-serif;
@@ -435,20 +439,7 @@ input, textarea {
 #footer a{
   margin: 10px;
 }
-#info-footer {
-    margin: 1em;
-    float: right;
-}
-    #info-footer p{
-        margin: 0;
-        text-align: left;
-    }
-    #info-footer .contact-item{
-        margin-top: 1em;
-        margin-bottom: 1em;
-        justify-content: flex-start;
 
-    }
     .subpage{
 
     }
@@ -571,8 +562,28 @@ text-decoration: none;
   background-color: #1c1c1c;
   float: left;
   width: 100%;
-  margin: 10px;
   height: 300px;
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
+#footer_navigation{
+  margin-top: 50px;
+}
+#info-footer {
+    float: right;
+    margin-top: -150px;
+
+}
+    #info-footer p{
+        margin: 0;
+        text-align: left;
+    }
+    #info-footer .contact-item{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        justify-content: flex-start;
+
+    }
+    #copyright{
+      margin-top: 80px;
+    }
