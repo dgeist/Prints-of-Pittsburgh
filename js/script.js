@@ -12,6 +12,17 @@
     }
 });
 
+function sendContactEmail(event) {
+    //event.preventDefault();
+    let templateParams = {
+        "name": $('#contactName').val(),
+        "email": $('#contactEmail').val(),
+        "subject": $('#contactSubject').val(),
+        "body": $('#contactMessage').val()
+    };
+    emailjs.send("gmail", "template_r4fUQdsa", templateParams);
+}
+
 function toggleNav() {
     $('.nav-links').slideToggle(400);
     $('.nav-icon').toggleClass('open');
