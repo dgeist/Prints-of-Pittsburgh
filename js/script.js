@@ -6,7 +6,7 @@
     testimonialCarousel();
     bindNavClickEvents();
 
-    let scrollTo = getQueryStringValue('scrollTo');
+    let scrollTo = getQueryStringValue('scroll');
     if (scrollTo !== "" & scrollTo !== undefined) {
         scrollToElement($('#' + scrollTo));
     }
