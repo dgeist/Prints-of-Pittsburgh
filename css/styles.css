@@ -343,6 +343,9 @@ h6 {
     #contact-form input, #contact-form textarea{
         color: white;
     }
+    #contact-form textarea{
+        height: 180px;
+    }
 
 .contact-info-images-container {
     width: 2em;
@@ -355,6 +358,8 @@ h6 {
     #contact-button{
       background-color: #FFFFFF;
       color: black !important;
+      width: 100px;
+      cursor: pointer;
     }
 
 label {
@@ -381,6 +386,7 @@ input, textarea {
     float: left;
     text-align: center;
     width: 100%;
+    margin-bottom: 2em;
 }
 
     .testimonial-master-container, .testimonial-buttons{
