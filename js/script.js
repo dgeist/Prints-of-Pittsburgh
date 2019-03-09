@@ -34,9 +34,9 @@ function testimonialCarousel() {
 function bindNavClickEvents() {
     $('.nav-scroll-on-click').click(function () {
         let id = $(this).attr('scroll-target');
-        var scrollElem = $(id);
-        var scrollPos = scrollElem.offset().top;
-        var navHeight = $('.header-container').height();
+        let scrollElem = $(id);
+        let scrollPos = scrollElem.offset().top;
+        let navHeight = $('.header-container').height();
         scrollPos = scrollPos - navHeight;
         console.log(scrollPos);
         $('html, body').animate({
