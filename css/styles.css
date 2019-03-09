@@ -35,6 +35,14 @@ body, html {
     .nav-links{
         display: block;
     }
+    .nav-links a, a:visited, a:active{
+      color: inherit;
+      text-decoration: none;
+    }
+    .nav-links a:hover{
+      text-decoration: none;
+      color: #666666;
+    }
     .topnav a {
         float: left;
         display: block;
@@ -123,28 +131,28 @@ body, html {
     margin: 2em;
 }
 
-h4 {
-    margin: 20px;
+#green-header{
+    margin: 50px;
     font-family: shackleton-wide, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2.7em;
     color: #07444A;
     line-height: .5em;
 }
 
-h3 {
+#home-tagline {
     margin: 0;
     font-family: shackleton-wide, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5em;
+    font-size: 3.3em;
     color: #07444A;
     line-height: 1em;
     margin: 40px;
 }
 
-h5 {
+#white-header{
     font-family: shackleton-wide, serif;
     font-style: normal;
     font-weight: 400;
@@ -165,13 +173,46 @@ h6 {
     padding: 0px;
     margin: 20px;
 }
-
+#sub-page-wrapper{
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 150px;
+}
+#press-img{
+  width: 500px;
+  float: left;
+  margin: 10px;
+}
+#main-heading{
+  font-family: shackleton-wide, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.7em;
+  color: #07444A;
+  line-height: .5em;
+  margin-bottom: -20px;
+}
+#sub-heading{
+  font-family: shackleton-wide, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  color: #07444A;
+  line-height: .5em;
+  margin-bottom: 0px;
+}
 #services {
     text-align: center;
     background-color: #07444A;
     float: left;
     width: 100%;
     color: #FFFFFF;
+}
+.ink-type-list{
+  font-family: 'Open Sans', sans-serif;
+}
+#sub-text{
+  font-weight: normal;
 }
 
 .services-container {
@@ -221,7 +262,6 @@ h6 {
     float: left;
     text-align: center;
     width: 100%;
-    display: none;
 }
 
 #work {
@@ -343,13 +383,13 @@ input, textarea {
             cursor: unset;
         }
 
-    
+
 
 <<<<<<< HEAD
         }
 
 =======
-    
+
 >>>>>>> 52da6640dc8bcab83ebb39e23c1a17ec28650621
 #footer {
     float: left;
@@ -469,4 +509,13 @@ text-decoration: none;
   margin-left: 0 auto;
   padding: .5em;
 
+}
+#footer{
+  background-color: #1c1c1c;
+  float: left;
+  width: 100%;
+  margin: 10px;
+  height: 300px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
 }
