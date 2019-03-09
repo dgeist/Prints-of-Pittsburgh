@@ -13,13 +13,12 @@
     <script type="text/javascript" src="js/imagelightbox.js"></script>
 
     <script src="jquery.js"></script>
-<script src="imagelightbox.js"></script>
 <script>
     $( function()
     {
         $( 'a' ).imageLightbox();
     });
-    $( selector ).imageLightbox(
+    $( selector 'id="imagelightbox"' ).imageLightbox(
 {
     selector:       'id="imagelightbox"',   // string;
     allowedTypes:   'png|jpg|jpeg|gif',     // string;
@@ -34,7 +33,7 @@
     onLoadStart:    false,                  // function/bool;   calls function when the image load begins
     onLoadEnd:      false                   // function/bool;   calls function when the image finishes loading
 });
-var $instance = $( selector ).imageLightbox();
+var $instance = $( selector 'id="imagelightbox"' ).imageLightbox();
 
 $instance.switchImageLightbox( index );
 // switches to the other image; accepts integer argument (an index of the desired image)
