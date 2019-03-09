@@ -351,8 +351,8 @@ h6 {
 
     }
     #contact-button{
-      background-color: #FFFFFF
-      
+      background-color: #FFFFFF;
+      color: black !important;
     }
 
 label {
