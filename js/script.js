@@ -5,6 +5,11 @@
     responsiveNav();
     testimonialCarousel();
     bindNavClickEvents();
+
+    let scrollTo = getQueryStringValue('scrollTo');
+    if (scrollTo !== "" & scrollTo !== undefined) {
+        scrollToElement($('#' + scrollTo));
+    }
 });
 
 function toggleNav() {
@@ -34,13 +39,20 @@ function testimonialCarousel() {
 function bindNavClickEvents() {
     $('.nav-scroll-on-click').click(function () {
         let id = $(this).attr('scroll-target');
-        let scrollElem = $(id);
-        let scrollPos = scrollElem.offset().top;
-        let navHeight = $('.header-container').height();
-        scrollPos = scrollPos - navHeight;
-        console.log(scrollPos);
-        $('html, body').animate({
-            scrollTop: scrollPos
-        }, 500);
+        scrollToElement($(id));
     });
 }
+
+function scrollToElement($scrollElem) {
+    let scrollPos = $scrollElem.offset().top;
+    let navHeight = $('.header-container').height();
+    scrollPos = scrollPos - navHeight;
+    console.log(scrollPos);
+    $('html, body').animate({
+        scrollTop: scrollPos
+    }, 500);
+}
+
+function getQueryStringValue(key) {
+    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+}  
